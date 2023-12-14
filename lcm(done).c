@@ -26,6 +26,8 @@ Your function must be prototyped as follows:
   unsigned int    lcm(unsigned int a, unsigned int b);
 */
 
+#include <limits.h>
+
 unsigned int	lcm(unsigned int a, unsigned int b)
 {
 	unsigned int	larger_nb;
@@ -42,7 +44,8 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 	{
 		if (n % a == 0 && n % b == 0) // include both as not sure which will be bigger
 			return (n);
-		n += larger_nb;
+		if (!(n + larger_nb > UINT_MAX))
+			n += larger_nb;
 	}
 	
 }
