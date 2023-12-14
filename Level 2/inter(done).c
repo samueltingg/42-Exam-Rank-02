@@ -53,15 +53,7 @@ int main(int argc, char **argv)
 
 /*
 
-while loop - iterate through each char of 1st string
-
-if (ft_strchr(2nd string, current char))
-    write(1, &c, 1);
-
 - How to handle doubles
-
-map[126]
-
 1. mark all chars present in s2 as 1 at index corresponding to ascii value of that char
 2. if tab[(int)s1[i]] == 1, print! & increment value to 2
 

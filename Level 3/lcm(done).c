@@ -49,24 +49,15 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 	}
 	
 }
-#include <stdio.h>
-int	main(void)
-{
-	printf("%i", lcm(7, 3));
-}
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	printf("%i", lcm(7, 3));
+// }
 
 /*
 1. iterate through multiples of larger number
 2. if that multiple can be divided by the other number,
 	that multiple is LCM
-
-
------ Prime Factorization Method -----
-- multiple highest power of each prime factor involved
-eg.LCM of 4 and 6:
-Prime factorization of 4: 2^2
-Prime factorization of 6: 2 x 3^3
-LCM: 2^2 x 3 = 12
-
 */
 

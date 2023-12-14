@@ -54,8 +54,7 @@ int main(int argc, char **argv)
     1. empty string
 
 Structure
-
-
+------------
 while (s2[j])
 {
     if (s1[i] == s2[j])

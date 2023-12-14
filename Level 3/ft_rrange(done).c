@@ -33,20 +33,20 @@ int *ft_rrange(int start, int end)
 }
 
 
-#include <stdio.h>
-int main(void)
-{
-    int arrsize = 1;
-    int *array;
-    array = ft_rrange(0, 0);
+// #include <stdio.h>
+// int main(void)
+// {
+//     int arrsize = 1;
+//     int *array;
+//     array = ft_rrange(0, 0);
 
-    int i = 0;
-    while (i < arrsize)
-    {
-        printf("%i\n", array[i]);
-        i++;
-    }
-}
+//     int i = 0;
+//     while (i < arrsize)
+//     {
+//         printf("%i\n", array[i]);
+//         i++;
+//     }
+// }
 
 
 /*
