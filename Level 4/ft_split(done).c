@@ -54,25 +54,27 @@ char	**ft_split(char *str)
 	int		i;
 	int		j;
 	char	**array;
-    int word_count;
+    int wc;
+	int	strlen;
 
     if (!str)
         return (NULL);
-    word_count = count_words(str);
-	array = (char **)malloc(sizeof(char *) * (word_count + 1));
+    wc = count_words(str);
+	array = (char **)malloc(sizeof(char *) * (wc + 1));
 	if (array == NULL)
 		return (NULL);
-	array[word_count] = NULL;
+	array[wc] = NULL;
 	i = 0;
-	while (array[i]) // changed
+	while (i < wc) // changed
 	{
 		while (*str && if_sep(*str))
 			str++;
-		array[i] = (char *)malloc(sizeof(char) * (strlen_sep(str) + 1));
+		strlen = strlen_sep(str);
+		array[i] = (char *)malloc(sizeof(char) * (strlen + 1));
         if (array[i] == NULL)
             return (NULL);
 		j = 0;
-		while (*str && !if_sep(*str))
+		while (j < strlen && !if_sep(*str))
 		{
 			array[i][j++] = *str; // not sure about j
 			str++;
